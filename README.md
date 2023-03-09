@@ -12,3 +12,10 @@
 BGP neighbors configurations file is ```/etc/exabgp/exabgp.conf```.
 
 Have fun!
+
+## Commands
+Some usefull commands:
+
+```exabgpcli show neighbor summary```
+
+```exabgpcli neighbor 10.100.1.27 announce route 100.101.255.200 next-hop 172.31.31.2 community 65001:666```
