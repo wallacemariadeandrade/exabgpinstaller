@@ -9,4 +9,6 @@
 
 ```root@debian11:~/exabgpinstaller# ./exabgpinstaller.sh```
 
+BGP neighbors configurations file is ```/etc/exabgp/exabgp.conf```.
+
 Have fun!
