@@ -10,7 +10,7 @@ neighbor 10.100.1.27 {
     peer-as 64512;
     local-as 64512;
     router-id 10.100.1.51;
-    description "RT-CGNAT";
+    description "RT-BORDER";
     family {
       ipv4 unicast;
     }
@@ -29,6 +29,7 @@ ConditionPathExists=/etc/exabgp/exabgp.conf
 [Service]
 Environment=exabgp_daemon_daemonize=false
 ExecStartPre=/bin/bash -c "mkfifo /run/root.{in,out}"
+ExecStop=/bin/bash -c "rm -f /run/root.{in,out}"
 ExecStart=/usr/local/bin/exabgp /etc/exabgp/exabgp.conf
 User=root
 Restart=always
