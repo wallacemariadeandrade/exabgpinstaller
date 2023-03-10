@@ -23,6 +23,7 @@ Description=ExaBGP
 Documentation=man:exabgp(1)
 Documentation=man:exabgp.conf(5)
 Documentation=https://github.com/Exa-Networks/exabgp/wiki
+Documentation=https://github.com/wallacemariadeandrade/exabgpinstaller
 After=network.target
 ConditionPathExists=/etc/exabgp/exabgp.conf
  

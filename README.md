@@ -1,4 +1,6 @@
 # exabgpinstaller
+An easy way to install [ExaBGP](https://github.com/Exa-Networks/exabgp).
+
 ```root@debian11:~# apt install -y git```
 
 ```root@debian11:~# git clone https://github.com/wallacemariadeandrade/exabgpinstaller.git```
