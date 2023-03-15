@@ -1,0 +1,1 @@
+exabgpcli show neighbor summary
