@@ -40,6 +40,9 @@ SyslogIdentifier=ExaBGP
 WantedBy=multi-user.target
 EOL
 
+echo "alias showbgpsummary='exabgpcli show neighbor summary'" >> /root/.bashrc
+echo "alias showipbgp='exabgpcli show adj-rib out'" >> /root/.bashrc
+
 systemctl enable exabgp.service
 systemctl start exabgp
 systemctl status exabgp
